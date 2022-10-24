@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
+//Routing
 import { AuthRoutingModule } from './auth-routing.module';
+
+//Pages
 import { SignComponent } from './pages/sign/sign.component';
 
 
@@ -11,7 +15,8 @@ import { SignComponent } from './pages/sign/sign.component';
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    ReactiveFormsModule,
   ]
 })
 export class AuthModule { }
